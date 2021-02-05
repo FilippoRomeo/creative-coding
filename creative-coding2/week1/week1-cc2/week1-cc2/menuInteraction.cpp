@@ -8,6 +8,7 @@
 #include <iostream>
 #include "menuInteraction.hpp"
 #include "operations.hpp"
+#include <sstream>
 
 using namespace std;
 
@@ -25,8 +26,21 @@ int menuInteract::selection(int x){
             cin >> y;
             
             float n = operation.add(x, y);
+            ostringstream number_floated;
+            number_floated << n;
+            string s(number_floated.str());
             
-            cout << n << endl;
+            cout << " ___________________________________"<< endl;
+            cout << "|                               *   |"<< endl;
+            cout << "|       **                          |"<< endl;
+            cout << "|                                   |"<< endl;
+            cout << "|               "+s+"     *            |"<< endl;
+            cout << "|      *                            |"<< endl;
+            cout << "|                           *       |"<< endl;
+            cout << "|        **                         |"<< endl;
+            cout << " -----------------------------------"<< endl;
+            
+            
         }
         case 2:
         {
@@ -38,10 +52,21 @@ int menuInteract::selection(int x){
             cin >> y;
             
             float n = operation.sub(x, y);
+            ostringstream number_floated;
+            number_floated << n;
+            string s(number_floated.str());
             
-            cout << n << endl;
+            cout << " ___________________________________"<< endl;
+            cout << "|                               *   |"<< endl;
+            cout << "|       **                          |"<< endl;
+            cout << "|                                   |"<< endl;
+            cout << "|               "+s+"     *            |"<< endl;
+            cout << "|      *                            |"<< endl;
+            cout << "|                           *       |"<< endl;
+            cout << "|        **                         |"<< endl;
+            cout << " -----------------------------------"<< endl;
             
-            break;
+            
         }
         case 3:
         {
@@ -54,9 +79,20 @@ int menuInteract::selection(int x){
             
             float n = operation.mult(x, y);
             
-            cout << n << endl;
+            ostringstream number_floated;
+            number_floated << n;
+            string s(number_floated.str());
             
-            break;
+            cout << " ___________________________________"<< endl;
+            cout << "|                               *   |"<< endl;
+            cout << "|       **                          |"<< endl;
+            cout << "|                                   |"<< endl;
+            cout << "|               "+s+"     *            |"<< endl;
+            cout << "|      *                            |"<< endl;
+            cout << "|                           *       |"<< endl;
+            cout << "|        **                         |"<< endl;
+            cout << " -----------------------------------"<< endl;
+            
         }
         case 4:
         {
@@ -68,10 +104,21 @@ int menuInteract::selection(int x){
             cin >> y;
             
             float n = operation.add(x, y);
+            ostringstream number_floated;
+            number_floated << n;
+            string s(number_floated.str());
             
-            cout << n << endl;
+            cout << " ___________________________________"<< endl;
+            cout << "|                               *   |"<< endl;
+            cout << "|       **                          |"<< endl;
+            cout << "|                                   |"<< endl;
+            cout << "|               "+s+"     *            |"<< endl;
+            cout << "|      *                            |"<< endl;
+            cout << "|                           *       |"<< endl;
+            cout << "|        **                         |"<< endl;
+            cout << " -----------------------------------"<< endl;
             
-            break;
+            
         }
         case 5:
         {
@@ -81,12 +128,36 @@ int menuInteract::selection(int x){
             
             float n = operation.sqr(x);
             
-            cout << n << endl;
+            ostringstream number_floated;
+            number_floated << n;
+            string s(number_floated.str());
             
-            break;
+            cout << " ___________________________________"<< endl;
+            cout << "|                               *   |"<< endl;
+            cout << "|       **                          |"<< endl;
+            cout << "|                                   |"<< endl;
+            cout << "|               "+s+"     *            |"<< endl;
+            cout << "|      *                            |"<< endl;
+            cout << "|                           *       |"<< endl;
+            cout << "|        **                         |"<< endl;
+            cout << " -----------------------------------"<< endl;
+           
+            
+          
         }
         default:
-            break;
+            if (x == -1){
+                cout << " ___________________________________"<< endl;
+                cout << "|   '                           *   |"<< endl;
+                cout << "|       **                          |"<< endl;
+                cout << "|                        •          |"<< endl;
+                cout << "|           Program closed  *       |"<< endl;
+                cout << "|      *                            |"<< endl;
+                cout << "|            <3  BYE <3   *         |"<< endl;
+                cout << "|        **     °                   |"<< endl;
+                cout << " -----------------------------------"<< endl;
+                break;
+            }
     }
     return 0;
 };
