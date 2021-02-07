@@ -5,7 +5,7 @@ import re
 
 url_py_challange = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing={nothing}'
 
-nothing = '16044'
+nothing = '12345'
 
 def iterationtrulink(x):
     req = requests.get(url_py_challange, params= {"nothing": x})
