@@ -43,8 +43,6 @@ def iterationtrulink(x):
         print("               ")
         print("               ")
 
-        print("Do you want to: ")
-        print("               ")
         print("Type 1 --> Divide by two and continue  ")
         print("Type any char --> Stop")
 
@@ -53,6 +51,8 @@ def iterationtrulink(x):
         print("***************")
         print("***************")
 
+        print("               ")
+        print("               ")
         print("               ")
         val = input("Type in, come on we got requestss to make!: ")
         print("               ")
@@ -76,10 +76,5 @@ def iterationtrulink(x):
                 print("***************")
                 print("Ok that was it.")
                 i += 1
-
-            
-
-        
-        
 
 iterationtrulink(nothing)
