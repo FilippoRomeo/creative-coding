@@ -3,7 +3,7 @@ import re, os, zipfile
 nothing = 90052
 comments = []
 
-def iterationtrulink(x, y):
+def zip_iteration(x, y):
 
     cur_path = os.path.dirname(__file__)
     folder = "channel.zip"
@@ -32,7 +32,7 @@ def iterationtrulink(x, y):
         print("               ")
         print("               ")
         
-        return iterationtrulink(match, y)
+        return zip_iteration(match, y)
     else:
         print("\n ALT\n")
         nextNothing = (''.join(str(x) for x in match))
@@ -43,4 +43,6 @@ def iterationtrulink(x, y):
         print(x)
         print(''.join(y))
  
-iterationtrulink(nothing, comments)
+zip_iteration(nothing, comments)
+
+#http://www.pythonchallenge.com/pc/def/oxygen.html
