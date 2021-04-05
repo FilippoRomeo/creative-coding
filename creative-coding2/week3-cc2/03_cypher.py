@@ -22,3 +22,15 @@ x = cipher(2, text)
 print(x)
 #bit buggy 
 #not work for special char. upper, numbers
+
+'''
+raw = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle grgl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+url = "map"
+
+a = "abcdefghijklmnopqrstuvwxyz"
+b = "cdefghijklmnopqrstuvwxyzab"
+
+trans = raw.translate(str.maketrans(a, b))
+
+print(trans)
+'''

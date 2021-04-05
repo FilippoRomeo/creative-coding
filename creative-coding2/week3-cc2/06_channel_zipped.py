@@ -3,7 +3,7 @@ import re, os, zipfile
 nothing = 90052
 comments = []
 
-def zip_iteration(x, y):
+def iterate_zip(x, y):
 
     cur_path = os.path.dirname(__file__)
     folder = "channel.zip"
@@ -32,7 +32,7 @@ def zip_iteration(x, y):
         print("               ")
         print("               ")
         
-        return zip_iteration(match, y)
+        return iterate_zip(match, y)
     else:
         print("\n ALT\n")
         nextNothing = (''.join(str(x) for x in match))
@@ -43,6 +43,6 @@ def zip_iteration(x, y):
         print(x)
         print(''.join(y))
  
-zip_iteration(nothing, comments)
+iterate_zip(nothing, comments)
 
 #http://www.pythonchallenge.com/pc/def/oxygen.html

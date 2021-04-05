@@ -7,4 +7,4 @@ req = urlopen(url_py_challange).read()
 data = (pickle.load(urlopen(url_py_challange)))
 
 for line in data:
-    print("".join([ k* v for k,v in line])) 
+    print("".join([k * v for k, v in line]))
